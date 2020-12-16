@@ -29,19 +29,19 @@ zuul:
     eager-load:
       enabled: true
   routes:
-    nooble-security:
+    au-security:
       sensitiveHeaders:
       path: /oauth/**
       stripPrefix: false
       serviceId: user-authentication
-    morningservice:
+    userservice:
       sensitiveHeaders:
       path: /users/**
       stripPrefix: false
       serviceId: user-service
-    eveningservice:
+    userdata:
       sensitiveHeaders:
-      path: /user/**
+      path: /data/**
       stripPrefix: false
       serviceId: user-data
    

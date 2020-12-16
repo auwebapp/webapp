@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.insurance.user.entity.Users;
-import com.insurance.user.repository.RoleRepository;
+
 import com.insurance.user.repository.UserRepository;
 import com.insurance.user.service.UserService;
 
@@ -16,8 +16,10 @@ import com.insurance.user.service.UserService;
 public class UserController {
 	@Autowired
 	private UserService userService;
-    @PostMapping("/user/create")
-    public void createUser(@RequestBody Users user){
-    	userService.saveUser(user);
+   
+	@PostMapping("/add")
+    public Users createUser(@RequestBody Users user){
+    	System.out.println("inside the user create"+user.getFirstName());
+    	return userService.saveUser(user);
     }
 }

@@ -20,7 +20,7 @@ public class GatewayConfiguration extends ResourceServerConfigurerAdapter {
         http
                 .csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/oauth/**")
+                .antMatchers("/oauth/**","/users/add")
                 .permitAll()
                 .antMatchers("/**")
                 .authenticated();

@@ -15,7 +15,7 @@ import com.insurance.user.models.UserDetails;
 import com.insurance.user.repository.UserRepository;
 
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/data")
 public class UserController {
 
 	@Autowired
