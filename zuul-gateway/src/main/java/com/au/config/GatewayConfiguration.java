@@ -1,7 +1,3 @@
-/**
- * @Author Vinu Sagar Maintained by Nooble ®
- * Licensed to Notyfyd
- */
 
 package com.au.config;
 
